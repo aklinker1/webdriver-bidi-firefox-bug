@@ -13,7 +13,7 @@ const browserProcess = spawn(
 );
 
 // Wait for the web socket to be ready...
-await Bun.sleep(5000);
+await new Promise((resolve) => setTimeout(resolve, 5000));
 
 const socket = new WebSocket("ws://localhost:9222/session");
 await new Promise<void>((resolve, reject) => {
