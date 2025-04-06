@@ -1,5 +1,5 @@
 Install Bun v1.2.8 and run:
 
 ```sh
-bun index.ts
+FIREFOX_BIN="/path/to/firefox" bun index.ts
 ```
